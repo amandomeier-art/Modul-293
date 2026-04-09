@@ -4,69 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reiseziele | TravelGuide Pro</title>
-
-    <!-- CSS -->
+    <meta name="Autor" content="Amando Meier">
+    <meta name="description" content="Übersicht unserer Traum-Reiseziele.">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<header>
+    <nav class="navbar">
+        <div class="logo">TravelGuide Pro</div>
+        
+        <input type="checkbox" id="menu-toggle">
+        
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
-    <!-- ===== Header / Navigation ===== -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">TravelGuide Pro</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Start</a></li>
-                <li><a href="destinations.html" class="active">Reiseziele</a></li>
-                <li><a href="offers.html">Angebote</a></li>
-                <li><a href="about.html">Über uns</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+        <ul class="nav-links">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="destinations.html">Reiseziele</a></li>
+            <li><a href="offers.html">Angebote</a></li>
+            <li><a href="about.html">Über uns</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="anmeldung.html">Anmeldung</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- ===== Seitenüberschrift ===== -->
-    <section class="page-header">
-        <h1>Unsere Reiseziele</h1>
-        <p>Entdecke faszinierende Orte auf der ganzen Welt</p>
-    </section>
+    <main>
 
-    <!-- ===== Reiseziele Übersicht ===== -->
-    <section class="destinations">
-        <div class="card-container">
-
-            <div class="card">
-                <img src="Assets/images/italy.jpg" alt="Italien">
-                <h3>Italien</h3>
-                <p>Kultur, Essen & Meer</p>
-                <a href="destination-detail.html" class="btn-small">Details</a>
+        <section class="page-header destinations-bg">
+            <div class="header-content">
+                <h1>Unsere Reiseziele</h1>
+                <p>Entdecke atemberaubende Orte weltweit</p>
             </div>
+        </section>
 
-            <div class="card">
-                <img src="Assets/images/japan.jpg" alt="Japan">
-                <h3>Japan</h3>
-                <p>Tradition trifft Moderne</p>
-                <a href="destination-detail.html" class="btn-small">Details</a>
-            </div>
+        <div class="content-container">
+            
+            <section class="intro-text">
+                <h2>Finde deine nächste Traumreise</h2>
+                <p>
+                    Egal ob du die majestätischen Alpen, die unberührte Natur Neuseelands oder die endlosen Weiten Kanadas erkunden möchtest – wir haben die perfekten Guides für dich. Stöbere durch unsere Auswahl und lass dich inspirieren.
+                </p>
+            </section>
 
-            <div class="card">
-                <img src="Assets/images/switzerland.jpg" alt="Schweiz">
-                <h3>Schweiz</h3>
-                <p>Berge & Natur pur</p>
-                <a href="destination-detail.html" class="btn-small">Details</a>
-            </div>
+           <div class="grid-container">
+                    <article class="premium-card">
+                        <div class="card-image-wrapper">
+                            <img src="assets/images/japan.jpg" alt="Japan"width="600" height="400" loading="lazy">
+                            <span class="card-badge">Asien</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Japan</h3>
+                            <p class="card-text">Eine perfekte Mischung aus jahrhundertealten Traditionen und futuristischer Technologie.</p>
+                            <ul class="card-details">
+                                <li><strong>Highlights:</strong> <span>Tokio, Kyoto, Fuji</span></li>
+                                <li><strong>Reisezeit:</strong> <span>März - Mai</span></li>
+                                <li><strong>Visum:</strong> <span>Nicht nötig (CH)</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn">Details ansehen</a>
+                        </div>
+                    </article>
+
+                    <article class="premium-card">
+                        <div class="card-image-wrapper">
+                            <img src="assets/images/kanada.jpg" alt="Kanada"width="600" height="400" loading="lazy">
+                            <span class="card-badge">Nordamerika</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Kanada</h3>
+                            <p class="card-text">Unendliche Weiten, tiefe Wälder und kristallklare Seen warten auf Abenteurer.</p>
+                            <ul class="card-details">
+                                <li><strong>Highlights:</strong> <span>Banff, Niagara, Vancouver</span></li>
+                                <li><strong>Reisezeit:</strong> <span>Juni - Sept.</span></li>
+                                <li><strong>Visum:</strong> <span>eTA erforderlich</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn">Details ansehen</a>
+                        </div>
+                    </article>
+
+                    <article class="premium-card">
+                        <div class="card-image-wrapper">
+                            <img src="assets/images/neuseeland.jpg" alt="Australien"width="600" height="400" loading="lazy">
+                            <span class="card-badge">Ozeanien</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Australien</h3>
+                            <p class="card-text">Vom Outback bis zum Great Barrier Reef – ein Kontinent voller Wunder.</p>
+                            <ul class="card-details">
+                                <li><strong>Highlights:</strong> <span>Sydney, Uluru, Reef</span></li>
+                                <li><strong>Reisezeit:</strong> <span>Okt. - März</span></li>
+                                <li><strong>Visum:</strong> <span>eVisitor Visum</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn">Details ansehen</a>
+                        </div>
+                        </article>
+                        <article class="premium-card">
+                        <div class="card-image-wrapper">
+                            <img src="assets/images/switzerland.jpg" alt="Schweizer Alpen"width="600" height="400" loading="lazy">
+                            <span class="card-badge">Europa</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Schweiz</h3>
+                            <p class="card-text">Majestätische Gipfel, tiefblaue Seen und malerische Dörfer im Herzen Europas.</p>
+                            <ul class="card-details">
+                                <li><strong>Highlights:</strong> <span>Matterhorn, Luzern, Interlaken</span></li>
+                                <li><strong>Reisezeit:</strong> <span>Ganzjährig (Ski/Wandern)</span></li>
+                                <li><strong>Besonderheit:</strong> <span>Beste Schokolade & Uhren</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn">Details ansehen</a>
+                        </div>
+                    </article>
+
+                    <article class="premium-card">
+                        <div class="card-image-wrapper">
+                            <img src="assets/images/italy.jpg" alt="Venedig Italien"width="600" height="400" loading="lazy">
+                            <span class="card-badge">Europa</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Italien</h3>
+                            <p class="card-text">La Dolce Vita: Von antiker Geschichte in Rom bis zu den Kanälen von Venedig.</p>
+                            <ul class="card-details">
+                                <li><strong>Highlights:</strong> <span>Rom, Toskana, Amalfi-Küste</span></li>
+                                <li><strong>Reisezeit:</strong> <span>Mai - Oktober</span></li>
+                                <li><strong>Küche:</strong> <span>Weltberühmte Pasta & Pizza</span></li>
+                            </ul>
+                            <a href="contact.html" class="btn">Details ansehen</a>
+                        </div>
+                    </article>
+                </div>
+
+                </section>
+
+            <section class="cta-section">
+                <h2>Nichts Passendes dabei?</h2>
+                <p>Wir erweitern unser Angebot ständig. Kontaktiere uns für individuelle Anfragen!</p>
+                <a href="contact.html" class="btn">Kontakt aufnehmen</a>
+            </section>
 
         </div>
-    </section>
 
-    <!-- ===== Footer ===== -->
+    </main>
+
     <footer>
         <p>© 2026 TravelGuide Pro | Alle Rechte vorbehalten</p>
+        <div class="footer-links">
+            <a href="tel:+41764233031">Telefon: +41 76 423 30 31</a> |
+            <a href="mailto:amando.meier@bbzbl.ch">E-Mail: amando.meier@bbzbl.ch</a>
+        </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="assets/js/script.js"></script>
 </body>
 </html>

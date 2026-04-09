@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmeldung | TravelGuide Pro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">TravelGuide Pro</div>
+        
+        <input type="checkbox" id="menu-toggle">
+        
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="destinations.html">Reiseziele</a></li>
+            <li><a href="offers.html">Angebote</a></li>
+            <li><a href="about.html">Über uns</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="anmeldung.html">Anmeldung</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section class="page-header">
+            <h1>Reise-Guide Anmeldung</h1>
+            <p>Werde Teil unserer Community und erhalte exklusive Tipps.</p>
+        </section>
+
+        <div class="content-container">
+            <div class="form-wrapper">
+                <form action="https://gibm.becknet.ch/formular/formular.php" method="POST">
+                    
+                    <fieldset>
+                        <legend>Persönliche Informationen</legend>
+                        
+                        <label for="vorname">Vorname:</label>
+                        <input type="text" id="vorname" name="vorname" placeholder="Dein Vorname" required minlength="2" maxlength="30" autofocus>
+
+                        <label for="nachname">Nachname:</label>
+                        <input type="text" id="nachname" name="nachname" placeholder="Dein Nachname" required minlength="2" maxlength="30">
+
+                        <label for="email">E-Mail:</label>
+                        <input type="email" id="email" name="email" placeholder="beispiel@mail.ch" required>
+
+                        <label for="telefon">Telefon (Format: 0791234567):</label>
+                        <input type="tel" id="telefon" name="telefon" pattern="[0-9]{10}" placeholder="0791234567">
+
+                        <label for="passwort">Passwort:</label>
+                        <input type="password" id="passwort" name="passwort" required minlength="6">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Deine Reise-Präferenzen</legend>
+
+                        <label for="kontinent">Lieblingskontinent:</label>
+                        <select id="kontinent" name="kontinent">
+                            <option value="europa">Europa</option>
+                            <option value="asien">Asien</option>
+                            <option value="amerika">Amerika</option>
+                        </select>
+
+                        <div class="form-group-inline">
+                            <p><strong>Reiseart:</strong></p>
+                            <label class="radio-label"><input type="radio" name="reiseart" value="strand"> Strandurlaub</label>
+                            <label class="radio-label"><input type="radio" name="reiseart" value="abenteuer"> Abenteuer</label>
+                        </div>
+
+                        <div class="form-group-inline">
+                            <p><strong>Interessen:</strong></p>
+                            <label class="checkbox-label"><input type="checkbox" name="interessen" value="wandern"> Wandern</label>
+                            <label class="checkbox-label"><input type="checkbox" name="interessen" value="essen"> Essen</label>
+                        </div>
+
+                        <label for="code">Gutscheincode (deaktiviert):</label>
+                        <input type="text" id="code" name="code" value="NICHT VERFÜGBAR" disabled> 
+                    </fieldset>
+
+                    <div class="form-footer">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="agb" required> Ich akzeptiere die AGB
+                        </label>
+                        <button type="submit" class="btn">Konto erstellen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 TravelGuide Pro | Alle Rechte vorbehalten</p>
+    </footer>
+
+</body>
+</html>
