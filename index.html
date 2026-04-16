@@ -4,86 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelGuide Pro | Deine Traumreise</title>
-
-    <!-- CSS -->
+    <meta name="Autor" content="Amando Meier">
+    <meta name="description" content="Die Startseite die den ersten überblick zeigt.">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Google Font (optional) -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<header>
+    <nav class="navbar">
+        <div class="logo">TravelGuide Pro</div>
+        
+        <input type="checkbox" id="menu-toggle">
+        
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
-    <!-- ===== Header / Navigation ===== -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">TravelGuide Pro</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="destinations.html">Reiseziele</a></li>
+            <li><a href="offers.html">Angebote</a></li>
+            <li><a href="about.html">Über uns</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="anmeldung.html">Anmeldung</a></li>
+        </ul>
+    </nav>
+</header>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Start</a></li>
-                <li><a href="destinations.html">Reiseziele</a></li>
-                <li><a href="offers.html">Angebote</a></li>
-                <li><a href="about.html">Über uns</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+    <main>
 
-    <!-- ===== Hero Section ===== -->
-    <section class="hero">
-        <h1>Entdecke deine nächste Traumreise</h1>
-        <p>Individuelle Reisen. Unvergessliche Erlebnisse.</p>
-        <a href="destinations.html" class="btn">Reise entdecken</a>
-    </section>
-
-    <!-- ===== Highlights / Vorteile ===== -->
-    <section class="features">
-        <div class="feature">
-            <h3>🌍 Top Reiseziele</h3>
-            <p>Die schönsten Orte weltweit</p>
-        </div>
-
-        <div class="feature">
-            <h3>💼 Persönliche Beratung</h3>
-            <p>Individuell & professionell</p>
-        </div>
-
-        <div class="feature">
-            <h3>⭐ Beste Qualität</h3>
-            <p>Zufriedene Kunden garantiert</p>
-        </div>
-    </section>
-
-    <!-- ===== Beliebte Reiseziele ===== -->
-    <section class="destinations-preview">
-        <h2>Beliebte Reiseziele</h2>
-
-        <div class="card-container">
-            <div class="card">
-                <img src="Assets/images/italy.jpg" alt="Italien">
-                <h3>Italien</h3>
-                <a href="destination-detail.html" class="btn-small">Mehr erfahren</a>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>UNSERE REISEGUIDES</h1>
+                <p>Wie wir unsere Reisen vorbereiten</p>
             </div>
+        </section>
 
-            <div class="card">
-                <img src="Assets/images/japan.jpg" alt="Japan">
-                <h3>Japan</h3>
-                <a href="destination-detail.html" class="btn-small">Mehr erfahren</a>
-            </div>
+        <div class="content-container">
+            <section class="intro-section">
+                <h2>Willkommen beim Reise Guide</h2>
+                <p>
+                    Der Reise Guide hilft dir dabei, neue Orte zu entdecken und deine nächste Reise zu planen.
+                    Auf unserer Website findest du Inspiration, Reiseangebote und hilfreiche Tipps
+                    für verschiedene Reisearten.
+                </p>
+                <p>
+                    Egal ob du einen Strandurlaub, ein Abenteuer in den Bergen oder eine Städtereise
+                    planst – unser Reise Guide unterstützt dich dabei, die passende Reise zu finden.
+                </p>
+            </section>
 
-            <div class="card">
-                <img src="Assets/images/switzerland.jpg" alt="Schweiz">
-                <h3>Schweiz</h3>
-                <a href="destination-detail.html" class="btn-small">Mehr erfahren</a>
-            </div>
+            <section class="features-section">
+                <h2>Was du auf unserer Website findest</h2>
+                <ul>
+                    <li>Inspiration für neue Reiseziele</li>
+                    <li>Verschiedene Reiseangebote</li>
+                    <li>Tipps für Planung und Vorbereitung</li>
+                    <li>Karten und Informationen zu Orten</li>
+                </ul>
+            </section>
+
+            <section class="call-to-action">
+                <h2>Starte dein nächstes Abenteuer</h2>
+                <p>
+                    Entdecke unsere Reiseangebote oder erstelle ein Konto,
+                    um den Reise Guide vollständig zu nutzen.
+                </p>
+                <div class="button-group">
+                    <a href="offers.html" class="btn">Zu den Angeboten</a>
+                    <a href="anmeldung.html" class="btn">Jetzt registrieren</a>
+                </div>
+            </section>
         </div>
-    </section>
 
-    <!-- ===== Footer ===== -->
+    </main>
+
     <footer>
         <p>© 2026 TravelGuide Pro | Alle Rechte vorbehalten</p>
+        <div class="footer-links">
+            <a href="tel:+41764233031">Telefon: +41 76 423 30 31</a> |
+            <a href="mailto:amando.meier@bbzbl.ch">E-Mail: amando.meier@bbzbl.ch</a>
+        </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
